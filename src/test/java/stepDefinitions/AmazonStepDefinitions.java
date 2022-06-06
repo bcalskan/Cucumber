@@ -34,6 +34,7 @@ public class AmazonStepDefinitions {
         Driver.closeDriver();
     }
 
+
     @Then("kullanici Java icin arama yapar")
     public void kullanici_java_icin_arama_yapar() {
         amazonPage.aramaKutusu.sendKeys("Java" + Keys.ENTER);
@@ -57,5 +58,42 @@ public class AmazonStepDefinitions {
         String actualText = amazonPage.aramaSonucElementi.getText();
         String expectedText = "Iphone";
         Assert.assertTrue(actualText.contains(expectedText));
+    }
+
+    @Given("kullanici {string} icin arama yapar")
+    public void kullanici_icin_arama_yapar(String istenenKelime) {
+        amazonPage.aramaKutusu.sendKeys(istenenKelime + Keys.ENTER);
+
+
+    }
+
+    @Given("sonuclarin {string} icerdigini test eder")
+    public void sonuclarin_icerdigini_test_eder(String istenenKelime) {
+        String arananKelime = istenenKelime;
+        String actualAramaSonucYazısı = amazonPage.aramaSonucElementi.getText();
+        Assert.assertTrue(actualAramaSonucYazısı.contains(arananKelime));
+
+
+    }
+
+
+    @Given("kullanici {string} anasayfasinda") //amazonUrl
+    public void kullaniciAnasayfasinda(String istenenUrl) {
+        Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
+    }
+
+    @And("url'in {string} icerdigini test eder")
+    public void urlInIcerdiginiTestEder(String istenenKelime) {
+        String actualAramaSonucYazısı = amazonPage.aramaSonucElementi.getText();
+        Assert.assertTrue(actualAramaSonucYazısı.contains(istenenKelime));
+    }
+
+    @Then("kullanici {int} saniye bekler")
+    public void kullaniciSaniyeBekler(int istenenSaniye) {
+        try {
+            Thread.sleep(istenenSaniye*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
