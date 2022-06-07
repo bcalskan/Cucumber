@@ -50,7 +50,6 @@ public class AmazonStepDefinitions {
     @And("kullanici iphone icin arama yapar")
     public void kullaniciIphoneIcinAramaYapar() {
         amazonPage.aramaKutusu.sendKeys("Iphone" + Keys.ENTER);
-
     }
 
     @Then("sonuclarin Iphone icerdigini test eder")
@@ -63,8 +62,6 @@ public class AmazonStepDefinitions {
     @Given("kullanici {string} icin arama yapar")
     public void kullanici_icin_arama_yapar(String istenenKelime) {
         amazonPage.aramaKutusu.sendKeys(istenenKelime + Keys.ENTER);
-
-
     }
 
     @Given("sonuclarin {string} icerdigini test eder")
@@ -72,8 +69,6 @@ public class AmazonStepDefinitions {
         String arananKelime = istenenKelime;
         String actualAramaSonucYazısı = amazonPage.aramaSonucElementi.getText();
         Assert.assertTrue(actualAramaSonucYazısı.contains(arananKelime));
-
-
     }
 
 
@@ -96,4 +91,5 @@ public class AmazonStepDefinitions {
             e.printStackTrace();
         }
     }
+
 }
