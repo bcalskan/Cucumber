@@ -45,4 +45,6 @@ public class HerokuAppStepDefinitions {
     public void deleteButonununGorunmediginiTestEdin() {
         Assert.assertTrue(herokuAppPage.deleteListesi.isEmpty());
     }
+
+
 }
