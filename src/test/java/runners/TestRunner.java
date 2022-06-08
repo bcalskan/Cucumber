@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         dryRun = false
 
 )
-public class Runner {
+public class TestRunner {
     /*
     Bir frameworkde bir tek Runner classi yeterli olabilir
     Runner classinda class bodysinde hicbir sey olmaz
