@@ -1,5 +1,6 @@
 Feature: US1010 herokuapp Delete testi
 
+  @herokuApp
   Scenario: TC15 herokuapp´dan delete butonu calismality
     Given kullanici "herokuAppUrl" anasayfasinda
     And add Element butona basin
