@@ -8,6 +8,7 @@ runners\TestRunner.class
 utilities\Driver.class
 pages\HMCPage.class
 stepDefinitions\Hooks.class
+runners\TestRunner2.class
 pages\DataTablesPage.class
 utilities\ConfigReader.class
 stepDefinitions\HMCStepDefinitions.class
