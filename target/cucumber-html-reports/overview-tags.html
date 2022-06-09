@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@herokuApp",  "@parametre",  "@pr1",  "@sirali",  "@wip", ] ,
+        labels:  [ "@config",  "@guru",  "@herokuApp",  "@parametre",  "@pr1",  "@pr2",  "@sirali",  "@wip", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00,  100.00,  100.00,  100.00,  100.00, ] 
+                data:  [ 50.00,  100.00,  100.00,  100.00,  100.00,  77.78,  100.00,  100.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 25.00,  0.00,  0.00,  0.00,  0.00,  11.11,  0.00,  0.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 25.00,  0.00,  0.00,  0.00,  0.00,  11.11,  0.00,  0.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
         <td>1</td>
-      <td>09 Jun 2022, 19:59</td>
+      <td>09 Jun 2022, 20:08</td>
     </tr>
   </tbody>
 </table>
@@ -197,6 +197,40 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
+        <td class="tagname"><a href="report-tag_1758352257.html">@config</a></td>
+
+        <td      class="passed"    >2</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="32632661700">32.632</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_2209773552.html">@guru</a></td>
+
+        <td      class="passed"    >5</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">5</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="11097432300">11.097</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
         <td class="tagname"><a href="report-tag_470444124.html">@herokuApp</a></td>
 
         <td      class="passed"    >8</td>
@@ -210,7 +244,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="23439137800">23.439</td>
+        <td class="duration" data-value="23705046000">23.705</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -227,7 +261,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="12886981900">12.886</td>
+        <td class="duration" data-value="11695963100">11.695</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -244,8 +278,25 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="42882198200">42.882</td>
+        <td class="duration" data-value="41051491000">41.051</td>
         <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_2149501487.html">@pr2</a></td>
+
+        <td      class="passed"    >7</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">9</td>
+
+        <td  class="passed"    >1</td>
+        <td  class="failed"    >1</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="43730094000">43.730</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_2210992001.html">@sirali</a></td>
@@ -261,7 +312,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="36326119700">36.326</td>
+        <td class="duration" data-value="35401009100">35.401</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -278,7 +329,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="6556078500">6.556</td>
+        <td class="duration" data-value="5650481900">5.650</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -286,33 +337,33 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>42</td>
+      <td>56</td>
+      <td>2</td>
+      <td>2</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>42</td>
+      <td>60</td>
 
-      <td>8</td>
-      <td>0</td>
-      <td>8</td>
+      <td>10</td>
+      <td>2</td>
+      <td>12</td>
 
-      <td class="duration">2:2.090</td>
-      <td>5</td>
+      <td class="duration">3:24.964</td>
+      <td>8</td>
     </tr>
     <tr>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
+      <td>93.33%</td>
+      <td>3.33%</td>
+      <td>3.33%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
+      <td>83.33%</td>
+      <td>16.67%</td>
       <td></td>
       <td></td>
-      <td>100.00%</td>
+      <td>80.00%</td>
     </tr>
   </tfoot>
 </table>

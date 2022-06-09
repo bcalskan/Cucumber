@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="70.797">
-    <testcase classname="US1002 Kullanici ortak adimlari Background ile calistirir" name="TC04 amazon nutella arama" time="24.445">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="61.036">
+    <testcase classname="US1002 Kullanici ortak adimlari Background ile calistirir" name="TC04 amazon nutella arama" time="19.306">
         <system-out>
             <![CDATA[Given kullanici amazon anasayfasinda........................................passed
 And kullanici Nutella icin arama yapar......................................passed
@@ -9,7 +9,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1003 kullanici parametre kullanarak arama yapabilmeli" name="TC06 kullanici parametre ile amazonda arama yapabilmeli" time="19.28">
+    <testcase classname="US1003 kullanici parametre kullanarak arama yapabilmeli" name="TC06 kullanici parametre ile amazonda arama yapabilmeli" time="14.307">
         <system-out>
             <![CDATA[Given kullanici amazon anasayfasinda........................................passed
 And kullanici "Nutella" icin arama yapar....................................passed
@@ -18,7 +18,7 @@ Then sayfayi kapatir........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1010 herokuapp Delete testi" name="TC15 herokuapp´dan delete butonu calismality" time="25.947">
+    <testcase classname="US1010 herokuapp Delete testi" name="TC15 herokuapp´dan delete butonu calismality" time="26.212">
         <system-out>
             <![CDATA[Given kullanici "herokuAppUrl" anasayfasinda................................passed
 And add Element butona basin................................................passed
@@ -28,53 +28,6 @@ And Delete butonunun gorunur oldugunu test edin.............................pass
 Then Delete butonuna basarak butonu silin...................................passed
 And Delete butonunun gorunmedigini test edin................................passed
 And sayfayi kapatir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-</testsuite>
-....failed
-Then sayfayi kapatir........................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='a-section a-spacing-small a-spacing-top-small']"}
-  (Session info: chrome=102.0.5005.63)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'DESKTOP-RG3SMTO', ip: '192.168.178.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [873ce679a401750970b627fb126b7e04, findElement {using=xpath, value=//div[@class='a-section a-spacing-small a-spacing-top-small']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Berk\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60516}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60516/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 873ce679a401750970b627fb126b7e04
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy23.getText(Unknown Source)
-	at stepDefinitions.AmazonStepDefinitions.urlInIcerdiginiTestEder(AmazonStepDefinitions.java:82)
-	at ✽.url'in "techproeducation" icerdigini test eder(file:///C:/Users/Berk/Documents/com.batch59Cucumber/src/test/resources/features/US1004_ConfigDosyasindanParametreKullanimi.feature:7)
-]]>
-        </failure>
-    </testcase>
-    <testcase classname="US1011 web tablosundaki istenen sütunu yazdirma" name="TC16 kullanici sütun basligi ile liste alabilmeli" time="15.572">
-        <system-out>
-            <![CDATA[Given kullanici "guruUrl" anasayfasinda.....................................passed
-And kullanici 3 saniye bekler...............................................passed
-And cookies sorulursa kabul eder............................................passed
-And "Company", sutunundaki tum degerleri yazdirir...........................passed
-Then sayfayi kapatir........................................................passed
 ]]>
         </system-out>
     </testcase>
