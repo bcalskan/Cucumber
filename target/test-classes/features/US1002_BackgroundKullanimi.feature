@@ -1,10 +1,10 @@
 @wip
 Feature: US1002 Kullanici ortak adimlari Background ile calistirir
 
+  @pr1
   Background: ortak adim
     Given kullanici amazon anasayfasinda
 
-  @pr1
   Scenario: TC04 amazon nutella arama
     And kullanici Nutella icin arama yapar
     Then sonuclarin Nutella icerdigini test eder
